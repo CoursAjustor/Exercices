@@ -1,0 +1,2 @@
+try:
+	python exercices.py

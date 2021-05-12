@@ -1,4 +1,5 @@
 class Exercice5():
-  
-  def main(self):
-    return None
+
+    def main(self):
+        print("Exercice 5")
+        return None
