@@ -1,22 +1,44 @@
-from exercices.exercice_2 import Exercice2
+
+"""
+    test if the result of the main function
+    of the exercice is the right answer
+"""
 import unittest
+from exercices.exercice_2 import Exercice2
+
 
 class TestStringMethods(unittest.TestCase):
+    """
+        The testing class for exercice 2
+    """
 
-  def setUp(self):
-    self.exercice = Exercice2()
+    def setUp(self):
+        """
+            setUp the system
+        """
+        self.exercice = Exercice2()
 
-  def tearDown(self) -> None:
-      return super().tearDown()
+    def test_big_lower(self):
+        """
+            test if the result of the main function
+            of the exercice is the right answer
+        """
+        self.assertEqual(self.exercice.main(15), 'non')
 
-  def test_big_lower(self):
-    self.assertEqual(self.exercice.main(15), 'non')
+    def test_lower(self):
+        """
+            test if the result of the main function
+            of the exercice is the right answer
+        """
+        self.assertEqual(self.exercice.main(18), 'oui sauf EU')
 
-  def test_lower(self):
-    self.assertEqual(self.exercice.main(18), 'oui sauf EU')
+    def test_upper(self):
+        """
+            test if the result of the main function
+            of the exercice is the right answer
+        """
+        self.assertEqual(self.exercice.main(21), 'oui')
 
-  def test_upper(self):
-    self.assertEqual(self.exercice.main(21), 'oui')
 
 if __name__ == '__main__':
-  unittest.main()
+    unittest.main()
