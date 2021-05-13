@@ -17,6 +17,8 @@ exercices.append(Exercice4b())
 exercices.append(Exercice5())
 exercices.append(Exercice5b())
 
+print('Démarrage des exercices')
+
 for exercice in exercices:
     param = random.randint(1, 100)
     exercice.main(param)
