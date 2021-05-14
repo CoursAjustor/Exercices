@@ -3,124 +3,70 @@
 Ecrire les codes dans le dossier "exercices" dans les fichiers correspondants,
 créer une branche où tu fera une pull request afin de valider ton code
 des tests passeront et vérifieront que le résultat est le bon, quand tous les tests seront passés je vérifierais
-la qualitée du code. Dans tous les cas créer les méthodes demandées et appelle les avec les paramètres passés dans la méthode ```main```.
+la qualitée du code.
 
-tu peux tester ton code avec la commande ```make try```. Pour chaque exercice affiche dans la fonction ce qui est demandée et retourne sa valeur.
+tu peux tester ton code avec la commande `make try` ou `python exercices.py`. Pour chaque exercice affiche dans la fonction ce qui est demandée et retourne sa valeur.
 
-Ne touche en aucun cas les tests et le fichier ```exercices.py``` et ne regarde pas dedans il n'y a pas de réponses
+Ne touche en aucun cas les tests et le fichier `exercices.py` et ne regarde pas dedans il n'y a pas de réponses
 
 ## Exercice 1
 
-écrire une méthode ```checkAge``` qui pour un paramètre passé dis si oui ou non l'utilisateur peut accéder au site. Cette méthode devra être appelée dans la méthode ```main``` de la classe correspondant à l'exercice
+écrire la fonction `sum` qui prend deux paramètres et qui retourne la somme des deux paramètres
+
 exemple:
+
 ```
-age < 21 => non
-sinon => oui
+sum(1, 1) => 2
 ```
 
 ## Exercice 2
 
-écrire une méthode ```checkAge``` qui pour un paramètre passé dis si oui ou non l'utilisateur peut accéder au site suivant le pay. Cette méthode devra être appelée dans la méthode ```main``` de la classe correspondant à l'exercice
+écrire la fonction `sub` qui prend deux paramètres et qui retourne la différence des deux paramètres
 
 exemple:
+
 ```
-age < 18 => non
-age < 21 => oui sauf EU
-sinon => oui
+sub(1, 1) => 0
 ```
 
 ## Exercice 3
 
-écrire une méthode ```counter``` qui compte de 1 au paramètre passé, le résultat doit être affiché et retourné par la fonction sous la forme d'un tableau de données. Cette méthode devra être appelée dans la méthode ```main``` de la classe correspondant à l'exercice
+écrire la fonction `count` qui prend un paramètres et qui retourne le tableau allant de 1 jusqu'au paramètre
+
 exemple:
+
 de 1 à 15
+
 sortie:
+
 ```
-1
-2
-3
-4
-...
-15
+[1,2,3,4,..., 15]
 ```
 
 ## Exercice 4
 
-écrire une méthode ```counterEven``` qui compte de 1 au paramètre passé et avec seulement les nombre pairs. Cette méthode devra être appelée dans la méthode ```main``` de la classe correspondant à l'exercice
-exemple:
-de 1 à 15
-sortie:
-```
-2
-4
-...
-14
-```
+écrire une méthode `count_even` qui prend un paramètres et qui retourne le tableau d'entier pair allant de 1 jusqu'au paramètre
 
-## Exercice 4.1
-
-écrire une méthode ```counterOdd``` qui compte de 1 au paramètre passé et avec seulement les nombre impairs. Cette méthode devra être appelée dans la méthode ```main``` de la classe correspondant à l'exercice
 exemple:
+
 de 1 à 15
+
 sortie:
+
 ```
-1
-3
-...
-15
+[2,4,..., 14]
 ```
 
 ## Exercice 5
 
-écrire une méthode ```drawPyramid``` qui affiche une pyramide d'étoile de hauteur le paramètre passé. Cette méthode devra être appelée dans la méthode ```main``` de la classe correspondant à l'exercice
-ex:
-entrée:
-3
-sortie:
-```
-  *
- ***
-*****
-```
-entrée:
-4
-sortie:
-```
-   *
-  ***
- *****
-*******
-```
+écrire une méthode `count_odd` qui prend un paramètres et qui retourne le tableau d'entier impair allant de 1 jusqu'au paramètre
 
-## Exercice final (bonus)
+exemple:
 
-écrire une méthode ```draw``` qui affiche un losange d'étoile de hauteur le paramètre passé (attention il y a une subtilité). Cette méthode devra être appelée dans la méthode ```main``` de la classe correspondant à l'exercice
-ex:
-entrée:
-3
+de 1 à 15
+
 sortie:
 
 ```
-  *
- ***
-  *
-```
-entrée:
-4
-sortie:
-```
-size need to be odd rerun using the default value
-  *
- ***
-  *
-```
-entrée:
-5
-sortie:
-```
-  *
- ***
-*****
- ***
-  *
+[1,3,..., 15]
 ```

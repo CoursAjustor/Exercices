@@ -2,7 +2,8 @@
     The class who test the exercice 1 result
 """
 import unittest
-from exercices.exercice_1 import Exercice1
+import random
+from exercices.exercice_1 import sum
 
 
 class TestStringMethods(unittest.TestCase):
@@ -10,25 +11,16 @@ class TestStringMethods(unittest.TestCase):
         The testing class for exercice 1
     """
 
-    def setUp(self):
-        """
-            setUp the system
-        """
-        self.exercice = Exercice1()
-
-    def test_lower(self):
+    def test_function(self):
         """
             test if the result of the main function
             of the exercice is the right answer
         """
-        self.assertEqual(self.exercice.main(18), 'non')
+        testing_param1 = random.randint(1, 100)
+        testing_param2 = random.randint(1, 100)
 
-    def test_upper(self):
-        """
-            test if the result of the main function
-            of the exercice is the right answer
-        """
-        self.assertEqual(self.exercice.main(21), 'oui')
+        self.assertEqual(sum(testing_param1, testing_param2),
+                         testing_param1 + testing_param2)
 
 
 if __name__ == '__main__':
