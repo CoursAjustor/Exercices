@@ -28,7 +28,7 @@ class TestStringMethods(unittest.TestCase):
         """
         testing_param = random.randint(1, 100)
         self.assertEqual(self.exercice.main(testing_param),
-                         range(2, testing_param+1, 2))
+                         list(range(2, testing_param+1, 2)))
 
 
 if __name__ == '__main__':
