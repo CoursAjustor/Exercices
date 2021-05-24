@@ -1,5 +1,11 @@
 class Exercice3():
 
-    def main(self):
+    def main(self, target):
         print("Exercice 3")
-        return None
+        count = self.count(target)
+        print(count)
+        return count
+
+    def count(self, target):
+        return list(range(1, target+1)) 
+
