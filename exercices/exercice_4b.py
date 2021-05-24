@@ -6,6 +6,6 @@ class Exercice4b():
         print(counterOdd)
         return counterOdd
 
-    def countOdd(self, target):
+    def counterOdd(self, target):
         return list(range(1, target+1, 2)) 
 
